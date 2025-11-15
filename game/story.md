@@ -1,19 +1,13 @@
-
 Notes:
 -Owner is in the back, no actual face
 -At the end, the owner shows his face- shadow face?
--MINIGAMES:
-    - First one, have to bite fruits in a certain amount of time
-    - Second one, have to catch fruits (the fruits are moving around on screen, have to click them in a certain amount of time)
-    - Third one, run away from fruits
-
-
+-MINIGAMES: - First one, have to bite fruits in a certain amount of time - Second one, have to catch fruits (the fruits are moving around on screen, have to click them in a certain amount of time) - Third one, run away from fruits
 
 Outline of story:
 -Hungry
 -Opens door
 -Owner says that he's in the back
--Main character has inner monologue 
+-Main character has inner monologue
 -Orders fruit
 -Head down, depressed + owner comes out and places fruit so we don't see face.
 -First mini-game starts, eats fruit in certain amount of time.
@@ -34,10 +28,9 @@ Outline of story:
 -Very familiar, looks back on life.
 -Head down depressed orders fruit + recieves bloody fruit.
 -Third mini-game, have to "run" away from fruits. Maybe click a button before the fruit gets to it? Maybe so fast that forced to lose.
--Feels a NEED to go to the door. 
+-Feels a NEED to go to the door.
 -Goes in the door, creepy owner is there "you shouldn't be here".
 
-
-
 Dialogue:
+
 
