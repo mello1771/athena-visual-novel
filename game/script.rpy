@@ -4,7 +4,12 @@
 # name of the character.
 
 define mango = Character("Mango")
+define orange = Character("Orange")
+define avocado = Character("avocado")
+define kiwi = Character("kiwi")
 
+define you = Character("You")
+define owner = Character("Owner")
 
 
 
@@ -17,7 +22,7 @@ label start:
     "."
     ".."
     "..."
-    "suddenly, you're hungry."
+    "You're hungry."
     "."
     ".."
     "..."
@@ -26,6 +31,20 @@ label start:
     scene bg room # cutesy background
     with fade
     "You walk into the Fruit Cafe."
+
+    "Warm light hits your face and your eyes automatically go to the menu, different fruit options shown on the screen."
+
+    you "Hello?"
+
+    "You look around the cafe, but no one's there"
+
+    "Just as you were about to leave, you hear a man's voice."
+
+    owner "I'll be right with you! Just place your order at the kiosk."
+
+    
+
+
 
     show eileen happy
 
