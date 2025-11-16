@@ -106,7 +106,7 @@ label start:
             "There's something that you're forgetting."
             "Just as a thought begins to come to you, you hear a man place down your plate."
             "You lift up your head and see your avocado."
-            scene bg cafe avocado normal
+            scene bg cafe avo normal
             with fade
 
     "You begin to eat your fruit, satisfaction warming your veins."
@@ -369,7 +369,7 @@ label stage_three:
             "You know that there's something."
             "Just as a thought begins to come to you, you hear a man place down your plate."
             "You lift up your head and see your... avocado."
-            scene bg cafe avocado med
+            scene bg cafe avo med
             with fade
 
     "You continue to eat your fruit, unable to stop yourself from shoveling it into your mouth."
