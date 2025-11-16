@@ -41,7 +41,7 @@ label start:
 
     menu:
         "Mango":
-            $ fruit1 = "mango"
+            $ fruit1 = "mangoes"
             "You're craving something sweet and tropical."
             "You put your head down as you wait for your order."
             "You recall something you heard about mangoes..."
@@ -58,7 +58,7 @@ label start:
             scene bg cafe mango normal
             with fade
         "Kiwi":
-            $ fruit1 = "kiwi"
+            $ fruit1 = "kiwis"
             "You're craving something tangy and sweet."
             "You put your head down as you wait for your order."
             "You recall something you heard about kiwis..."
@@ -75,7 +75,7 @@ label start:
             scene bg cafe kiwi normal
             with fade
         "Orange":
-            $ fruit1 = "orange"
+            $ fruit1 = "oranges"
             "You're craving something citrusy and tart."
             "You put your head down as you wait for your order."
             "You recall something you heard about oranges..."
@@ -92,7 +92,7 @@ label start:
             scene bg cafe orange normal
             with fade
         "Avocado":
-            $ fruit1 = "avocado"
+            $ fruit1 = "avocados"
             "You're craving something smooth and neutral."
             "You put your head down as you wait for your order."
             "You recall something you heard about avocados..."
@@ -171,8 +171,9 @@ label stage_two:
     menu:
         "Mango":
             "The mango is the obvious option, isnt it?"
-            if fruit1=="mango":
+            if fruit1=="mangoes":
                 "A feeling of familiarity settles upon your brain."
+            $ fruit2 = "mangoes"
             "Your head falls into your arms, resting in a familiar spot on the table."
             "You recall something you heard about mangoes..."
             "..."
@@ -189,8 +190,9 @@ label stage_two:
             with fade
         "Kiwi":
             "You're craving something tangy and sweet."
-            if fruit1=="kiwi":
+            if fruit1=="kiwis":
                 "These thoughts feel familiar..."
+            $ fruit2 = "kiwis"
             "Your head falls into your arms, resting in a familiar spot on the table."
             "You recall something you heard about kiwis..."
             "..."
@@ -207,12 +209,13 @@ label stage_two:
             with fade
         "Orange":
             "You're craving something citrusy and tart."
-            if fruit1=="orange":
+            if fruit1=="oranges":
                 "This sparks something deep in your mind, have you done this before?"
+            $ fruit2 = "oranges"
             "You put your head down as you wait for your order."
             "You recall something you heard about oranges..."
             "..."
-            "'Due to a day of fatigue,'"
+            "'The day has drained you,'"
             "'The sweet, round orange awaits you,'"
             "'To release you from the prison of your thoughts in which you're confined.'"
             "..."
@@ -225,144 +228,15 @@ label stage_two:
             with fade
         "Avocado":
             "You're craving something smooth and neutral."
-            if fruit1=="avocado":
+            if fruit1=="avocados":
                 "These thoughts feel familiar..."
+            $ fruit2 = "avocados"
             "You put your head down as you wait for your order."
             "You recall something you heard about avocados..."
             "..."
-            "'Round and creamy, green and dreamy,'"
+            "'Another fruit to be seen'"
             "'Avocados I need,'"
-            "'To take in this restaurant.'"
-            "..."
-            "The image of an avocado begins to come to your mind, but you brush it off."
-            "You are forgetting something."
-            "You know that there's something."
-            "Just as a thought begins to come to you, you hear a man place down your plate."
-            "You lift up your head and see your... avocado."
-            scene bg cafe avocado med
-            with fade
-
-    "You continue to eat your fruit, unable to stop yourself from shoveling it into your mouth."
-    "You've been waiting for this moment."
-    "The hole can never be filled."
-    "The hunger was eating you from the inside out."
-    "But now, but now, you can finally be free."
-    "But you've thought that before, haven't you?"
-    "..."
-    "The fruit is gone."
-    "But it's okay, because you just ate, right? The hunger won't return."
-    "Yet as you sit there, with no one around, the doubt begins to creep in once again, its tendrils wrapping around your brain, suffocating your thoughts."
-    "You can't think, you start to wonder why you're even here."
-    "..."
-    "Your eyes arrive at the door. It sits there, an old friend."
-    "You're still hungry. "
-    "You need more food."
-    "You stumble out of your seat towards the door, reaching for the satisfaction of the hunger that burns within you."
-    "..."
-    "Your vision turns blurry, and you feel your legs turning numb."
-
-    scene black
-    with hpunch
-
-    jump stage_three
-
-
-
-label stage_three:
-
-    scene
-
-    "."
-    ".."
-    "..."
-    "you are ravenous."
-    "."
-    ".."
-    "..."
-    "...."
-
-    scene bg cafe weird
-    "You walk into the cafe."
-
-    "You notice a screen that the different fruit options are displayed on."
-
-    you "..."
-
-    "You begin to speak, but there's no one there, is there?"
-
-    "Yet something tells you that maybe you should wait just a moment more."
-
-    "Your gut feeling was correct, as a voice calls out."
-
-    o "I'll be right with you! Just place your order at the kiosk."
-
-    "It's time to choose."
-
-    menu:
-        "Mango":
-            "The mango is the obvious option, isnt it?"
-            if fruit1=="mango":
-                "A feeling of familiarity settles upon your brain."
-            "Your head falls into your arms, resting in a familiar spot on the table."
-            "You recall something you heard about mangoes..."
-            "..."
-            "'Fruit of memory.'"
-            "'A song of desperate childhood'"
-            "'Confusion overrules.'"
-            "..."
-            "The image of a mango begins to come to your mind, but you brush it off."
-            "You are forgetting something."
-            "You know that there's something."
-            "Just as a thought begins to come to you, you hear a man place down your plate."
-            "You lift up your head and see your... mango."
-            scene bg cafe mango med
-            with fade
-        "Kiwi":
-            "You're craving something tangy and sweet."
-            if fruit1=="kiwi":
-                "These thoughts feel familiar..."
-            "Your head falls into your arms, resting in a familiar spot on the table."
-            "You recall something you heard about kiwis..."
-            "..."
-            "'The kiwi, tart.'"
-            "'Your hunger desperately amounts,'"
-            "'Waiting for something to eat.'"
-            "..."
-            "The image of a kiwi begins to come to your mind, but you brush it off."
-            "You are forgetting something."
-            "You know that there's something."
-            "Just as a thought begins to come to you, you hear a man place down your plate."
-            "You lift up your head and see your... kiwi."
-            scene bg cafe kiwi med
-            with fade
-        "Orange":
-            "You're craving something citrusy and tart."
-            if fruit1=="orange":
-                "This sparks something deep in your mind, have you done this before?"
-            "You put your head down as you wait for your order."
-            "You recall something you heard about oranges..."
-            "..."
-            "'Due to a day of fatigue,'"
-            "'The sweet, round orange awaits you,'"
-            "'To release you from the prison of your thoughts in which you're confined.'"
-            "..."
-            "The image of an orange begins to come to your mind, but you brush it off."
-            "You are forgetting something."
-            "You know that there's something."
-            "Just as a thought begins to come to you, you hear a man place down your plate."
-            "You lift up your head and see your... orange."
-            scene bg cafe orange med
-            with fade
-        "Avocado":
-            "You're craving something smooth and neutral."
-            if fruit1=="avocado":
-                "These thoughts feel familiar..."
-            "You put your head down as you wait for your order."
-            "You recall something you heard about avocados..."
-            "..."
-            "'Round and creamy, green and dreamy,'"
-            "'Avocados I need,'"
-            "'To take in this restaurant.'"
+            "'To chase away the dreams.'"
             "..."
             "The image of an avocado begins to come to your mind, but you brush it off."
             "You are forgetting something."
@@ -390,14 +264,192 @@ label stage_three:
     "You stumble out of your seat towards the door, reaching for the satisfaction of the hunger that burns within you."
     "..."
 
+    scene black
+    with hpunch
+
+    jump stage_three
+
+
+
+label stage_three:
+
+    scene black
+
+    "."
+    ".."
+    "..."
+    "you are ravenous."
+    "."
+    ".."
+    "..."
+    "...."
+
+    scene bg cafe weird
+    "it's the cafe."
+
+    "you see the fruits... the food..."
+
+    you "please... just serve me..."
+
+    "the voice taunts you"
+
+    o "I'll be right with you! Just place your order at the kiosk."
+
+    if fruit2=="mangoes":
+        "you want the mango, don't you?"
+        "it's calling to you, familiar somehow"
+        "memories come to you in snippets..."
+        "..."
+        "'a song of joyous childhood'"
+        "..."
+        "'confusion overrules?'"
+        "..." 
+        "you find the taste lingering on your tongue, as if you've already ordered and ate"
+        "confused, you ignore the thought and order anyway"
+        "you sit down, wondering where all the other customers are, but the hunger is too strong to care"
+        "footsteps approach, placing down your mango. you look up, wondering how someone could make your order so quickly"
+        "..."
+        "no ones there."
+
+        scene bg cafe mango weird
+        with hpunch
+
+    elif fruit2=="kiwis":
+        "you want the kiwi, don't you?"
+        "it's calling to you, familiar somehow"
+        "memories come to you in snippets..."
+        "..."
+        "'waiting for something to eat'"
+        "..."
+        "'your hunger desperately amounts?'"
+        "..." 
+        "you find the taste lingering on your tongue, as if you've already ordered and ate"
+        "confused, you ignore the thought and order anyway"
+        "you sit down, wondering where all the other customers are, but the hunger is too strong to care"
+        "footsteps approach, placing down your mango. you look up, wondering how someone could make your order so quickly"
+        "..."
+        "no ones there."
+
+        scene bg cafe kiwi weird
+        with hpunch
+
+    elif fruit2=="oranges":
+        "you want the orange, dont you?"
+        "it's calling to you, familiar somehow"
+        "memories come to you in snippets..."
+        "..."
+        "'despite a day of fatigue'"
+        "..."
+        "'to release you from the prison of your thoughts?'"
+        "..." 
+        "you find the taste lingering on your tongue, as if you've already ordered and ate"
+        "confused, you ignore the thought and order anyway"
+        "you sit down, wondering where all the other customers are, but the hunger is too strong to care"
+        "footsteps approach, placing down your mango. you look up, wondering how someone could make your order so quickly"
+        "..."
+        "no ones there."
+
+        scene bg cafe orange weird
+        with hpunch
+
+    elif fruit2=="avocados":
+        "you want the avocado, don't you?"
+        "it's calling to you, familiar somehow"
+        "memories come to you in snippets..."
+        "..."
+        "'avocados I want'"
+        "..."
+        "'to chase away the dreams?'"
+        "..." 
+        "you find the taste lingering on your tongue, as if you've already ordered and ate"
+        "confused, you ignore the thought and order anyway"
+        "you sit down, wondering where all the other customers are, but the hunger is too strong to care"
+        "footsteps approach, placing down your mango. you look up, wondering how someone could make your order so quickly"
+        "..."
+        "no ones there."
+
+        scene bg cafe avo weird
+        with hpunch
+
+      
+    
+
+    "you need it. you eat and you eat and you eat and you eat and you eat and you eat."
+    "it's as if the hunger is peeling the tissues from your stomach, the skin from your bones."
+    "..."
+    "there's no more."
+    "in a frenzy, you push yourself out of your seat"
+    "this time it will work."
+    "this time, you will get more."
+    "there will be no worry. you will never have to think again."
+    "you will never have to feel hungry again."
+    "..."
+    "you open the door."
 
 
     scene bg storage
     with hpunch
+
+    o "..."
+
+    you "no... no..."
+    you "please... i can't be hungry any longer..."
+
+    o "..."
+    
+    scene black
     with fade
+
+    jump backstory
+
+
+label backstory:
+
+    scene bg backstory
+    with fade
+
+    you "Fruit."
+    you "The one thing I thought I could have."
+
+    you "For years, all other foods had evaded me."
+    you "I could never feel happy with myself when I would eat."
+
+    you "But there would always be fruit."
+    you "I could eat [fruit1] and [fruit2]... these wouldn't affect me in the way other foods did."
+
+    "..."
+
+    you "Yet it wasn't enough."
+    you "I would always feel hungry, and it grew worse each day."
+
+    you "I would never be happy eating the other foods, but I wouldn't be happy if I was hungry either."
+
+    you "There was no chance for a good ending."
+
+    scene black
+    with fade
+
+    jump chef_backstory
+
+label chef_backstory:
+
     scene bg storage
+    with fade
 
-    return
+    o "I always wanted to help you- yet I could never find a way"
+    o "First, I tried to buy some more fruits for you, yet you were never full afterwards."
+    o "My money ran out quickly, and I couldn't keep up with your hunger"
+    o "Then, I thought that I could grow fruits for you myself, but the seeds that I have come from another world"
+    o "I think those fruits made it worse for you, and you lost your memory."
+    o "I'm sorry I was never able to save you."
 
+    scene black
+    with fade
+
+    "End?"
+
+    menu:
+        "The End":
+            return
 
 #Shyla, Chloe, Shurui
