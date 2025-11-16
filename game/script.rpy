@@ -23,6 +23,8 @@ label start:
     ".."
     "..."
     "...."
+
+    play music "cafe-music-163375-original.mp3" fadeout 1.0 fadein 1.0
     scene bg cafe normal # cutesy background
     with fade
     "You walk into the Fruit Cafe."
@@ -130,6 +132,8 @@ label start:
     "The thought lights something within you, and you feel yourself walking towards the door and opening it."
     "..."
     "Your vision turns blurry, and you feel your legs turning numb."
+
+    stop music fadeout 1.0
     scene black
     with hpunch
     
@@ -150,7 +154,9 @@ label stage_two:
     "..."
     "...."
 
+    play music "cafe-music-163375-distorted1.mp3" fadeout 1.0 fadein 1.0
     scene bg cafe med
+    with fade
 
     "You walk into the cafe."
 
@@ -264,6 +270,7 @@ label stage_two:
     "You stumble out of your seat towards the door, reaching for the satisfaction of the hunger that burns within you."
     "..."
 
+    stop music fadeout 1.0
     scene black
     with hpunch
 
@@ -284,7 +291,9 @@ label stage_three:
     "..."
     "...."
 
+    play music "cafe-music-163375-distorted2.mp3" fadeout 1.0 fadein 1.0
     scene bg cafe weird
+    with fade
     "it's the cafe."
 
     "you see the fruits... the food..."
@@ -397,6 +406,7 @@ label stage_three:
 
     o "..."
     
+    stop music fadeout 1.0
     scene black
     with fade
 
